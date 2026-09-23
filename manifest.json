@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Flow Automator - Asset Reference",
+  "name": "Flow Automator - Irkop",
   "version": "3.0.0",
   "description": "Flow automation with prompt files, named image assets, references, retry, logs and optional auto download.",
   "permissions": ["storage", "activeTab", "scripting", "debugger", "downloads", "tabs", "unlimitedStorage"],

@@ -40,3 +40,29 @@
 .fa-log-big{max-height:300px;border:1px solid #151515;border-radius:8px;margin:0 12px;border-top:1px solid #151515}
 .fa-debug{font-size:9px;opacity:.4;padding:6px 12px;background:#0a0a0a;border:1px solid #151515;border-radius:8px;margin:6px 12px}
 .fa-debug-mini{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:4px 10px;opacity:.55}
+
+
+/* FIX untuk sidebar - tambahkan di content.css */
+.fa-tabs button {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  opacity: 0.6;
+}
+.fa-tabs button.active {
+  opacity: 1 !important;
+  background: #222 !important;
+  color: #fff !important;
+}
+.fa-panel {
+  display: none;
+}
+#panel-images {
+  display: block;
+}
+.fa-grid button {
+  pointer-events: auto !important;
+}
+
+/* Log lineage style */
+#log-list::-webkit-scrollbar { width: 6px; }
+#log-list::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }

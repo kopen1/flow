@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Flow Automator - Asset Reference",
+  "version": "3.0.0",
+  "description": "Flow automation with prompt files, named image assets, references, retry, logs and optional auto download.",
+  "permissions": ["storage", "activeTab", "scripting", "debugger", "downloads", "tabs", "unlimitedStorage"],
+  "host_permissions": ["https://flow.google.com/*", "https://labs.google/*"],
+  "content_scripts": [{
+    "matches": ["https://flow.google.com/*", "https://labs.google/fx/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }],
+  "action": {"default_popup": "popup.html"},
+  "background": {"service_worker": "background.js"}
+}

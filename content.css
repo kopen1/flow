@@ -1,0 +1,42 @@
+
+#flow-auto-root{position:fixed;top:0;right:0;width:380px;height:100vh;z-index:2147483647;background:#0a0a0a;border-left:1px solid #1e1e1e;overflow-y:auto;font-family:Inter,system-ui,sans-serif;color:#fff;transition:all 0.25s ease}
+#flow-auto-root.minimized{width:46px;height:46px;overflow:hidden;border-radius:0 0 0 12px}
+#flow-auto-root.minimized .fa-body{display:none}
+#flow-auto-root.minimized .fa-bar{display:none}
+.fa-header{padding:10px 12px;border-bottom:1px solid #111;position:sticky;top:0;background:#0a0a0a;z-index:5;display:flex;justify-content:space-between;align-items:center}
+.fa-header b{font-size:12px}
+.fa-header small{font-size:9px;opacity:.5;display:block}
+.fa-min-btn{width:28px;height:28px;border-radius:8px;border:1px solid #222;background:#151515;color:#fff;cursor:pointer}
+.fa-status{margin:10px;background:#121212;border:1px solid #222;border-radius:20px;padding:6px 12px;font-size:11px;display:flex;gap:8px;align-items:center}
+.fa-status.connected{border-color:#1a3a22;background:#0f1a12;color:#4ade80}
+.fa-dot{width:8px;height:8px;border-radius:50%;background:#333}
+.fa-status.connected .fa-dot{background:#4ade80}
+.fa-tabs{display:flex;gap:6px;padding:0 12px;margin:8px 0}
+.fa-tabs button{flex:1;padding:8px;border-radius:20px;border:1px solid #222;background:#141414;color:#777;font-size:11px;font-weight:600;cursor:pointer}
+.fa-tabs button.active{background:#1f1f1f;color:#fff;border-color:#fff}
+.fa-sec{padding:10px 12px;border-bottom:1px solid #0f0f0f}
+.fa-grid{display:flex;flex-wrap:wrap;gap:6px}
+.fa-grid button{padding:7px 10px;border-radius:16px;border:1px solid #222;background:#151515;color:#888;font-size:10px;font-weight:600;cursor:pointer;flex:1;min-width:60px}
+.fa-grid button.active{background:#222;color:#fff;border-color:#fff}
+.fa-ref-box{background:#0f0f0f;border:1px dashed #222;border-radius:10px;min-height:54px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;cursor:pointer;flex-wrap:wrap;gap:6px;padding:6px}
+.fa-ref-box.has{border-style:solid;background:#141414;justify-content:flex-start}
+.fa-ref-box img{width:42px;height:42px;border-radius:6px;object-fit:cover}
+.fa-drop{border:1px dashed #222;background:#0f0f0f;border-radius:10px;padding:16px;text-align:center;color:#666;font-size:10px;cursor:pointer;margin-top:6px}
+.fa-ta{width:100%;min-height:90px;background:#101010;border:1px solid #222;border-radius:10px;color:#fff;padding:8px;font-size:11px;margin-top:6px;display:none}
+.fa-ta.show{display:block}
+.fa-qitem{background:#141414;border:1px solid #1a1a1a;border-radius:8px;padding:6px 10px;margin-bottom:5px;font-size:10px;display:flex;gap:6px;align-items:center}
+.fa-qitem.gen{border-color:#fff;background:#1e1e1e}
+.fa-qitem.done{opacity:.5}
+.fa-num{background:#222;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px}
+.fa-bar{position:sticky;bottom:0;background:linear-gradient(transparent,#0a0a0a 40%);padding:10px;display:flex;gap:6px}
+.fa-bar button{flex:1;padding:11px;border-radius:18px;border:0;font-weight:700;cursor:pointer}
+.fa-start{background:#fff;color:#000}
+.fa-stop{background:#222;color:#fff}
+.fa-testfill{background:#151515;color:#9ca3af;border:1px solid #2a2a2a;flex:0.8}
+.fa-ptabs{display:flex;gap:5px;margin-bottom:5px}
+.fa-ptabs button{flex:1;padding:6px;border-radius:14px;border:1px solid #222;background:#141414;color:#666;font-size:10px}
+.fa-ptabs button.active{background:#222;color:#fff;border-color:#444}
+.fa-log{font-size:9px;opacity:.6;padding:6px 12px;max-height:80px;overflow:auto;background:#080808;border-top:1px solid #111;white-space:pre-wrap}
+.fa-log-big{max-height:300px;border:1px solid #151515;border-radius:8px;margin:0 12px;border-top:1px solid #151515}
+.fa-debug{font-size:9px;opacity:.4;padding:6px 12px;background:#0a0a0a;border:1px solid #151515;border-radius:8px;margin:6px 12px}
+.fa-debug-mini{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:4px 10px;opacity:.55}
